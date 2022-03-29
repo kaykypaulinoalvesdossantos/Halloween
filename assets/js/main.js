@@ -51,6 +51,14 @@ function scrollHeader(){
 window.addEventListener('scroll', scrollHeader)
 
 /* ========================= NEW SWIPER ========================= */
+let newSwiper = new Swiper(".new-swiper", {
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop: 'true',
+    spaceBetween: 16,
+});
+
+
 
 /* ========================= SCROLL SECTIONS ACTIVE LINK ========================= */
 
