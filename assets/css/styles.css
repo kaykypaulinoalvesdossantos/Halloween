@@ -407,7 +407,63 @@ button{
 }
 
 /* ========================= TRICK OR TREAT ========================= */
+.trick__container{
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    padding: 1rem;
+}
 
+.trick__content{
+    position: relative;
+    background: var(--container-color);
+    border-radius: 1rem;
+    padding: 1.5rem 0 1rem 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.trcik__img{
+    width: 90px;
+    transition: .3s;
+}
+
+.trcik__subtitle,
+.trcik__price{
+    display: block;
+}
+
+.trcik__subtitle{
+    font-size: var(--smaller-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.trick__title,
+.trick__price{
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    font-size: var(--normal-font-size);
+}
+
+.trick__button{
+    display: inline-flex;
+    padding: .5rem;
+    border-radius: .25rem .25rem .75rem .25rem;
+    position: absolute;
+    right: -3rem;
+    bottom: 0;
+}
+
+.trick__icon{
+    font-size: 1.25rem;
+    color: var(--title-color);
+}
+
+.trick__content:hover .trick__img{
+    transform: translateY(-.5rem);
+}
+.trick__content:hover .trick__button{
+    right: 0;
+}
 
 /* ========================= DISCOUNT ========================= */
 
